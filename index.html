@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-3</title>
-    <!-- DaisyUi setup -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <!-- Tailwind Setup -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome setup -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'color-primary': 'rgba(171, 239, 95)',
-              }
-            }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-3</title>
+  <!-- DaisyUi setup -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <!-- Tailwind Setup -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome setup -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'color-primary': 'rgba(171, 239, 95)',
+            'button-color': 'rgba(171, 239, 95, 0.5)',
           }
         }
-      </script>
-      <!-- Font Setup -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+      }
+    }
+  </script>
+  <!-- Font Setup -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 
 <style>
@@ -34,46 +36,68 @@
     font-family: "Manrope", sans-serif;
   }
 </style>
+
 <body class="manrope-font">
-      <header>
-        <nav class="flex justify-between lg:justify-around my-4">
-          <div class="flex ">
-            <i class="fa-solid fa-arrow-right bg-color-primary rounded-full -rotate-45 p-2"></i>
-            <h1 class="mx-2 font-bold text-3xl">Rinterio</h1>
-          </div>
-          <!-- Responsive navbar -->
+  <header class="mx-4">
+    <nav class="flex justify-between lg:justify-around my-4">
+      <div class="flex ">
+        <i class="fa-solid fa-arrow-right bg-color-primary rounded-full -rotate-45 p-2"></i>
+        <h1 class="mx-2 font-bold text-3xl">Rinterio</h1>
+      </div>
+      <!-- Responsive navbar -->
 
-          <div class="lg:hidden">
-            <i class="fa-solid fa-bars"></i>
-          </div>
+      <div class="lg:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </div>
 
-          <div class="hidden lg:flex list-none">
-            <li class="mx-2"><span class="text-black">Home</span></li> 
-            <li class="mx-2 text-gray-500">Services</li>
-            <li class="mx-2 text-gray-500">Portfolio</li>
-            <li class="mx-2 text-gray-500">Blogs</li>
-            <li class="mx-2 text-gray-500">Contact Us</li>
-            </div>
+      <div class="hidden lg:flex list-none">
+        <li class="mx-2"><span class="text-black">Home</span></li>
+        <li class="mx-2 text-gray-500">Services</li>
+        <li class="mx-2 text-gray-500">Portfolio</li>
+        <li class="mx-2 text-gray-500">Blogs</li>
+        <li class="mx-2 text-gray-500">Contact Us</li>
+      </div>
 
-          <div class="hidden lg:block space-x-4">
-            <i class="fa-solid fa-magnifying-glass text-gray-500"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-            <span class="bg-color-primary px-2 py-1 rounded-3xl">
-              Book Consult
-              <i class="fa-solid fa-arrow-right text-white bg-black rounded-full -rotate-45 p-1"></i>
-            </span>
-          </div>
-        </nav>
-      </header>
-      <!-- End of nav-bar -->
+      <div class="hidden lg:block space-x-4">
+        <i class="fa-solid fa-magnifying-glass text-gray-500"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="bg-color-primary px-2 py-1 rounded-3xl">
+          Book Consult
+          <i class="fa-solid fa-arrow-right text-white bg-black rounded-full -rotate-45 p-1"></i>
+        </span>
+      </div>
+    </nav>
+  </header>
+  <!-- End of nav-bar -->
+
+  <section class="mx-4 lg:w-3/4 lg:mx-auto">
+    <div>
+      <img class="lg:mx-auto" src="./assets/banner.png" alt="">
+    </div>
+
+    <div>
+      <h2 class="font-bold text-2xl text-center my-2 lg:text-5xl">A barn house of this design has a striking appearance
+      </h2>
+      <p class="text-gray-500 text-sm text-center my-2">The barn house captivates with its blend of rustic charm and
+        modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space
+        with natural light.</p>
+      <div class="lg:flex justify-center">
+        <button class="bg-button-color py-1 rounded-3xl w-full lg:w-32 ">
+
+          <b>View Details</b>
+          <i class="fa-solid fa-arrow-right bg-color-primary rounded-full -rotate-45 p-1"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- End of banner section -->
 
 
 
 
+  <main></main>
+  <footer></footer>
 
-
-      <main></main>
-      <footer></footer>
-    
 </body>
+
 </html>
